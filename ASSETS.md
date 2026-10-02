@@ -28,7 +28,20 @@ Estas imágenes no muestran las instalaciones, equipo ni alumnos de Kinesis. Se 
 
 [Licencia de Pexels](https://www.pexels.com/license/): permite uso gratuito en webs y publicidad, adaptación y atribución opcional; no implica respaldo de las personas o marcas fotografiadas. Las imágenes se redimensionan y comprimen a WebP, sin alterar su contenido. Los encuadres de presentación se definen en CSS.
 
-## Tipografía y favicon
+## Fotografías añadidas en la ampliación de la web
+
+Las cuatro imágenes siguientes son de **Pavel Danilyuk / Pexels**, bajo la misma [licencia de Pexels](https://www.pexels.com/license/). Son fotografías de apoyo, identificadas como tales; no representan las instalaciones, el equipo ni los alumnos del centro. Las versiones locales de 480, 960 y 1440 píxeles están comprimidas a WebP. No se incorporan servicios de imágenes externos al cargar la web.
+
+| Archivos | Fuente | Uso |
+| --- | --- | --- |
+| `pilates-grupo-*.webp` | [Pexels 6339398](https://www.pexels.com/photo/a-group-of-people-sitting-on-mats-stretching-6339398/) | Modalidad de clases grupales |
+| `pilates-individual-*.webp` | [Pexels 6926024](https://www.pexels.com/photo/a-woman-doing-a-seated-leg-stretch-6926024/) | Sesiones individuales y galería |
+| `pilates-detalle-*.webp` | [Pexels 6339636](https://www.pexels.com/photo/person-in-gray-leggings-and-pink-sneakers-exercising-6339636/) | Detalle de movimiento en la galería |
+| `pilates-practica-*.webp` | [Pexels 6339446](https://www.pexels.com/photo/people-exercising-together-6339446/) | Fotografía principal de la galería |
+
+Origen de las descargas: `https://images.pexels.com/photos/{id}/pexels-photo-{id}.jpeg?auto=compress&cs=tinysrgb&w=1600`. Solo se redimensionan y comprimen; los recortes de presentación se hacen mediante CSS.
+
+## Tipografía y favicon (recursos originales)
 
 - [Manrope](https://fonts.google.com/specimen/Manrope), distribuida por Google Fonts bajo SIL Open Font License 1.1. Fuente variable Latin alojada localmente; licencia incluida en `public/assets/Manrope-OFL.txt`.
 - Favicon tipográfico «K», creado para esta web en el color de marca. No pretende sustituir el logotipo del centro.

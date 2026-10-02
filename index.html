@@ -28,6 +28,7 @@
       crossorigin
     />
     <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/src/experience.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -88,10 +89,25 @@
         >
         <span class="wordmark-category">PILATES</span>
       </a>
-      <nav class="main-nav" aria-label="Navegación principal">
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+        hidden
+      >
+        Menú <span aria-hidden="true">☰</span>
+      </button>
+      <nav
+        class="main-nav"
+        id="main-navigation"
+        aria-label="Navegación principal"
+      >
         <a href="#estudio">El estudio</a>
         <a href="#clases">Clases</a>
+        <a href="#galeria">En movimiento</a>
         <a href="#opiniones">Opiniones</a>
+        <a href="#preguntas">Dudas</a>
       </nav>
       <a
         class="button button-small button-outline header-contact"
@@ -110,6 +126,10 @@
           <p class="hero-description">
             Más fuerza. Más equilibrio.<br />
             Más tú.
+            <span class="hero-subcopy"
+              >Un momento para escucharte y hacer del movimiento parte de tu
+              día.</span
+            >
           </p>
           <a
             class="button button-primary"
@@ -122,6 +142,9 @@
             </svg>
             Consultar clases
           </a>
+          <a class="hero-secondary text-link" href="#clases"
+            >Encuentra tu clase <span aria-hidden="true">↗</span></a
+          >
           <div class="hero-location">
             <svg class="icon" aria-hidden="true"><use href="#icon-pin" /></svg
             ><span>Av. de Andalucía, 11 · Huelva</span>
@@ -190,7 +213,7 @@
             Pilates en grupo e individual, con atención cercana en el corazón de
             Huelva.
           </p>
-          <div class="class-list" id="clases">
+          <div class="class-list">
             <article class="class-item">
               <span class="class-number" aria-hidden="true">01</span>
               <div>
@@ -252,6 +275,260 @@
       </section>
 
       <section
+        class="classes-section shell section-space"
+        id="clases"
+        aria-labelledby="classes-heading"
+      >
+        <div class="section-heading-row">
+          <div>
+            <p class="eyebrow">
+              <span class="section-number">02 /</span> TU FORMA DE MOVERTE
+            </p>
+            <h2 id="classes-heading">
+              Tu espacio.<br /><span class="text-pink"
+                >Tu manera de empezar.</span
+              >
+            </h2>
+          </div>
+          <p class="section-description">
+            En compañía o con un tiempo solo para ti. Descubre las opciones y
+            cuéntanos qué estás buscando.
+          </p>
+        </div>
+        <div class="class-cards">
+          <article class="class-card">
+            <figure>
+              <img
+                src="/assets/pilates-grupo-960.webp"
+                srcset="
+                  /assets/pilates-grupo-480.webp   480w,
+                  /assets/pilates-grupo-960.webp   960w,
+                  /assets/pilates-grupo-1440.webp 1440w
+                "
+                sizes="(max-width: 760px) calc(100vw - 40px), 45vw"
+                width="1440"
+                height="961"
+                alt="Personas estirando sobre colchonetas en una clase; fotografía de apoyo"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="photo-credit">Imagen de apoyo</figcaption>
+            </figure>
+            <div class="class-card-copy">
+              <span class="pill">MOVIMIENTO COMPARTIDO</span>
+              <h3>Clases en grupo</h3>
+              <p>
+                Encuentra un momento en tu semana para practicar Pilates,
+                compartir la experiencia y disfrutar del movimiento en compañía.
+              </p>
+              <a
+                class="text-link"
+                href="https://wa.me/34639532865?text=Hola%2C%20me%20gustar%C3%ADa%20consultar%20los%20horarios%20y%20la%20disponibilidad%20de%20las%20clases%20en%20grupo%20de%20Kinesis%20Pilates."
+                target="_blank"
+                rel="noopener noreferrer"
+                >Me interesan las clases en grupo
+                <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
+          <article class="class-card">
+            <figure>
+              <img
+                src="/assets/pilates-individual-960.webp"
+                srcset="
+                  /assets/pilates-individual-480.webp   480w,
+                  /assets/pilates-individual-960.webp   960w,
+                  /assets/pilates-individual-1440.webp 1440w
+                "
+                sizes="(max-width: 760px) calc(100vw - 40px), 45vw"
+                width="1440"
+                height="961"
+                alt="Mujer realizando un estiramiento sentado; fotografía de apoyo"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption class="photo-credit">Imagen de apoyo</figcaption>
+            </figure>
+            <div class="class-card-copy">
+              <span class="pill">UN MOMENTO PARA TI</span>
+              <h3>Sesiones individuales</h3>
+              <p>
+                Un espacio de atención individual para centrarte en tu práctica.
+                Habla con el centro sobre lo que buscas y las opciones
+                disponibles.
+              </p>
+              <a
+                class="text-link"
+                href="https://wa.me/34639532865?text=Hola%2C%20me%20gustar%C3%ADa%20informarme%20sobre%20las%20sesiones%20individuales%20de%20Kinesis%20Pilates%20y%20su%20disponibilidad."
+                target="_blank"
+                rel="noopener noreferrer"
+                >Consultar sesiones individuales
+                <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
+        </div>
+        <p class="section-footnote">
+          Horarios, tarifas y plazas: consúltalos directamente con el centro.
+        </p>
+      </section>
+
+      <section
+        class="first-step-section"
+        id="empezar"
+        aria-labelledby="first-step-heading"
+      >
+        <div class="shell first-step-inner">
+          <div class="first-step-copy">
+            <p class="eyebrow">EL PRIMER PASO ES UNA CONVERSACIÓN</p>
+            <h2 id="first-step-heading">
+              Empieza por ti.<br /><span>Nosotros te escuchamos.</span>
+            </h2>
+            <p>
+              No necesitas tenerlo todo decidido. Cuéntanos si es tu primera
+              vez, qué modalidad te interesa y cuándo te vendría bien venir.
+            </p>
+            <a class="button button-light" href="#contacto"
+              >Hablemos de tu primera clase <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <ol class="steps-list">
+            <li>
+              <span aria-hidden="true">01</span>
+              <div>
+                <h3>Cuéntanos qué buscas</h3>
+                <p>Comparte tu experiencia y lo que te gustaría trabajar.</p>
+              </div>
+            </li>
+            <li>
+              <span aria-hidden="true">02</span>
+              <div>
+                <h3>Consulta tus opciones</h3>
+                <p>Pregunta por modalidades, horarios, tarifas y plazas.</p>
+              </div>
+            </li>
+            <li>
+              <span aria-hidden="true">03</span>
+              <div>
+                <h3>Prepara tu visita</h3>
+                <p>Confirma la cita con el centro y qué necesitas traer.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section
+        class="gallery-section shell section-space"
+        id="galeria"
+        aria-labelledby="gallery-heading"
+      >
+        <div class="section-heading-row">
+          <div>
+            <p class="eyebrow">
+              <span class="section-number">03 /</span> EN MOVIMIENTO
+            </p>
+            <h2 id="gallery-heading">
+              Pequeños gestos.<br /><span class="text-pink"
+                >Tiempo para ti.</span
+              >
+            </h2>
+          </div>
+          <p class="section-description">
+            Una pausa en el día. La atención en cada gesto. Y las ganas de
+            volver a moverte.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-feature">
+            <a
+              class="gallery-link"
+              href="/assets/pilates-practica-1440.webp"
+              data-caption="Movimiento en compañía · fotografía de apoyo de Pavel Danilyuk / Pexels"
+              aria-label="Ampliar fotografía: movimiento en compañía"
+              ><img
+                src="/assets/pilates-practica-960.webp"
+                srcset="
+                  /assets/pilates-practica-480.webp   480w,
+                  /assets/pilates-practica-960.webp   960w,
+                  /assets/pilates-practica-1440.webp 1440w
+                "
+                sizes="(max-width: 760px) calc(100vw - 40px), 55vw"
+                width="1440"
+                height="961"
+                alt="Grupo de personas practicando estiramientos sobre colchonetas"
+                loading="lazy"
+                decoding="async"
+              /><span class="gallery-expand" aria-hidden="true">↗</span></a
+            >
+            <figcaption>
+              <span>01 — En compañía</span><span>Imagen de apoyo</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <a
+              class="gallery-link"
+              href="/assets/pilates-detalle-1440.webp"
+              data-caption="Atención al movimiento · fotografía de apoyo de Pavel Danilyuk / Pexels"
+              aria-label="Ampliar fotografía: atención al movimiento"
+              ><img
+                src="/assets/pilates-detalle-960.webp"
+                srcset="
+                  /assets/pilates-detalle-480.webp   480w,
+                  /assets/pilates-detalle-960.webp   960w,
+                  /assets/pilates-detalle-1440.webp 1440w
+                "
+                sizes="(max-width: 760px) calc(100vw - 40px), 30vw"
+                width="1440"
+                height="961"
+                alt="Detalle de un ejercicio de piernas con una banda elástica"
+                loading="lazy"
+                decoding="async"
+              /><span class="gallery-expand" aria-hidden="true">↗</span></a
+            >
+            <figcaption>
+              <span>02 — Cada detalle cuenta</span><span>Imagen de apoyo</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <a
+              class="gallery-link"
+              href="/assets/pilates-individual-1440.webp"
+              data-caption="Un momento para ti · fotografía de apoyo de Pavel Danilyuk / Pexels"
+              aria-label="Ampliar fotografía: un momento para ti"
+              ><img
+                src="/assets/pilates-individual-960.webp"
+                srcset="
+                  /assets/pilates-individual-480.webp   480w,
+                  /assets/pilates-individual-960.webp   960w,
+                  /assets/pilates-individual-1440.webp 1440w
+                "
+                sizes="(max-width: 760px) calc(100vw - 40px), 30vw"
+                width="1440"
+                height="961"
+                alt="Mujer concentrada en un estiramiento sobre el suelo"
+                loading="lazy"
+                decoding="async"
+              /><span class="gallery-expand" aria-hidden="true">↗</span></a
+            >
+            <figcaption>
+              <span>03 — A tu ritmo</span><span>Imagen de apoyo</span>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="section-footnote">
+          Fotografías de apoyo: no muestran las instalaciones ni al equipo de
+          Kinesis.
+          <a
+            href="https://www.pexels.com/@pavel-danilyuk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Pavel Danilyuk / Pexels</a
+          >.
+        </p>
+      </section>
+
+      <section
         class="reviews-section"
         id="opiniones"
         aria-labelledby="reviews-heading"
@@ -260,7 +537,7 @@
           <div class="reviews-heading-row">
             <div>
               <p class="eyebrow">
-                <span class="section-number">02 /</span> QUIENES YA NOS CONOCEN
+                <span class="section-number">04 /</span> QUIENES YA NOS CONOCEN
               </p>
               <h2 id="reviews-heading">
                 Se vive. <span class="text-pink">Se cuenta.</span>
@@ -325,18 +602,140 @@
       </section>
 
       <section
+        class="faq-section shell section-space"
+        id="preguntas"
+        aria-labelledby="faq-heading"
+      >
+        <div class="faq-intro">
+          <p class="eyebrow">
+            <span class="section-number">05 /</span> ANTES DE EMPEZAR
+          </p>
+          <h2 id="faq-heading">
+            Tus dudas,<br /><span class="text-pink">con calma.</span>
+          </h2>
+          <p class="section-description">
+            Lo esencial para dar el primer paso. Si te queda alguna pregunta,
+            estamos al otro lado.
+          </p>
+          <a class="text-link" href="#contacto"
+            >Tengo otra pregunta <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>
+              ¿Y si nunca he hecho Pilates?<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Cuéntanos que es tu primera vez al contactar. Así podrás consultar
+              con el centro qué opción encaja con tu experiencia y resolver tus
+              dudas antes de venir.
+            </p>
+          </details>
+          <details>
+            <summary>
+              ¿Puedo elegir entre grupo e individual?<span aria-hidden="true"
+                >+</span
+              >
+            </summary>
+            <p>
+              Sí, Kinesis ofrece clases grupales y sesiones individuales.
+              Consulta la disponibilidad de cada modalidad para decidir cuál
+              prefieres.
+            </p>
+          </details>
+          <details>
+            <summary>
+              ¿Cuáles son los horarios y las tarifas?<span aria-hidden="true"
+                >+</span
+              >
+            </summary>
+            <p>
+              Contacta por WhatsApp o llama al
+              <a href="tel:+34639532865">639 53 28 65</a> para conocer los
+              horarios, las tarifas y las plazas disponibles en este momento.
+            </p>
+          </details>
+          <details>
+            <summary>
+              ¿Qué necesito para mi primera clase?<span aria-hidden="true"
+                >+</span
+              >
+            </summary>
+            <p>
+              Antes de venir, confirma con el centro la ropa, el calzado y el
+              material que necesitas. Aprovecha para comentar cualquier
+              necesidad que quieras que se tenga en cuenta.
+            </p>
+          </details>
+          <details>
+            <summary>
+              ¿Cómo reservo una clase?<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Escríbenos o llámanos para solicitar una plaza. La consulta desde
+              esta web no es una reserva: el centro te confirmará directamente
+              la disponibilidad y la cita.
+            </p>
+          </details>
+          <details>
+            <summary>
+              ¿Dónde está Kinesis Pilates?<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              En Av. de Andalucía, 11, 21004 Huelva. En la sección de contacto
+              tienes el enlace a Google Maps para preparar tu ruta.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section
         class="contact-section shell section-space"
         id="contacto"
         aria-labelledby="contact-heading"
       >
         <div class="contact-copy">
           <p class="eyebrow">
-            <span class="section-number">03 /</span> NOS VEMOS EN KINESIS
+            <span class="section-number">06 /</span> NOS VEMOS EN KINESIS
           </p>
           <h2 id="contact-heading">
             Tu próximo<br /><span class="text-pink">movimiento.</span>
           </h2>
-          <p class="section-description">Hablemos de tus clases.</p>
+          <p class="section-description">
+            Hablemos de tus clases. Elige tus preferencias y prepara tu
+            consulta.
+          </p>
+          <form class="contact-planner" id="contact-planner" hidden>
+            <div class="planner-fields">
+              <label for="class-type"
+                >Me interesa<select id="class-type" name="modality">
+                  <option>Quiero que me orientéis</option>
+                  <option>Clases en grupo</option>
+                  <option>Sesiones individuales</option>
+                </select></label
+              ><label for="class-time"
+                >Me viene mejor<select id="class-time" name="availability">
+                  <option>Tengo flexibilidad</option>
+                  <option>Por la mañana</option>
+                  <option>Por la tarde</option>
+                </select></label
+              >
+            </div>
+            <p class="planner-note" id="planner-note">
+              Prepararemos un mensaje con tus preferencias. Tú lo revisas y lo
+              envías en WhatsApp. La plaza queda pendiente de confirmación.
+            </p>
+            <button
+              class="button button-primary"
+              type="submit"
+              aria-describedby="planner-note"
+            >
+              <svg class="icon" aria-hidden="true">
+                <use href="#icon-message" /></svg
+              >Preparar consulta por WhatsApp <span aria-hidden="true">↗</span>
+            </button>
+          </form>
           <a
             class="button button-primary"
             href="https://wa.me/34639532865?text=Hola%2C%20me%20gustar%C3%ADa%20informarme%20sobre%20las%20clases%20de%20Kinesis%20Pilates%20y%20su%20disponibilidad."
@@ -404,6 +803,19 @@
         WhatsApp</a
       >
     </nav>
+    <dialog
+      class="photo-dialog"
+      id="photo-dialog"
+      aria-label="Fotografía ampliada"
+    >
+      <button class="dialog-close" type="button" aria-label="Cerrar fotografía">
+        Cerrar <span aria-hidden="true">×</span>
+      </button>
+      <figure>
+        <img id="dialog-image" alt="" />
+        <figcaption id="dialog-caption"></figcaption>
+      </figure>
+    </dialog>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
